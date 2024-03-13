@@ -2,8 +2,8 @@ package com.rdz.HelloUniverse;
 
 public class HelloUniverse {
 	public static void main(String[] args) {
-
-		for (int nbPlanete = 7; nbPlanete < 10; nbPlanete++) {
+		int nbPlanete = 7;
+		while ( nbPlanete < 10) {
 			switch (nbPlanete) {
 			case 7:
 				System.out.println("On sait qu'au 16ème siècle, seules 7 planètes avaient été découvertes");
@@ -20,6 +20,7 @@ public class HelloUniverse {
 				System.out.printf("Le programme ne peut pas fournir de résultat pour %d planètes", nbPlanete);
 				break;
 			}
+			nbPlanete++;
 		}
 
 	}
