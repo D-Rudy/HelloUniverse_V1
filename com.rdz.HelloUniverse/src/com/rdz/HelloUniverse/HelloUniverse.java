@@ -42,7 +42,13 @@ public class HelloUniverse {
 		neptune.diameter = 49244L;
 		neptune.material = "Gaseous";
 
-		System.out.println("Planet: " + jupiter.name + "\ndiameter: " + jupiter.diameter + " km \nmaterial: " + jupiter.material);
+		Planet planet = new Planet();
+
+		System.out.println(
+				"Planet: " + jupiter.name + "\ndiameter: " + jupiter.diameter + " km \nmaterial: " + jupiter.material);
+		System.out.println(
+				"Planet: " + planet.name + "\ndiameter: " + planet.diameter + " km \nmaterial: " + planet.material);
+
 	}
 
 }
