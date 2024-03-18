@@ -2,6 +2,7 @@ package com.rdz.HelloUniverse;
 
 public class HelloUniverse {
 	public static void main(String[] args) {
+
 		Planet mercury = new Planet();
 		mercury.name = "mercury";
 		mercury.diameter = 4879L;
@@ -48,6 +49,10 @@ public class HelloUniverse {
 				"Planet: " + jupiter.name + "\ndiameter: " + jupiter.diameter + " km \nmaterial: " + jupiter.material);
 		System.out.println(
 				"Planet: " + planet.name + "\ndiameter: " + planet.diameter + " km \nmaterial: " + planet.material);
+
+		neptune.revolution();
+		System.out.println();
+		mars.rotation();
 
 	}
 
