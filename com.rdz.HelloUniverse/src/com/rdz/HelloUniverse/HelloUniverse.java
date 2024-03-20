@@ -3,57 +3,64 @@ package com.rdz.HelloUniverse;
 public class HelloUniverse {
 	public static void main(String[] args) {
 
-		Planet mercury = new Planet();
-		mercury.name = "mercury";
-		mercury.diameter = 4879L;
-		mercury.material = "Telluric";
+		Planete mercure = new Planete();
+		mercure.nom = "mercure";
+		mercure.diametre = 4879L;
+		mercure.matiere = "Tellurique";
 
-		Planet venus = new Planet();
-		venus.name = "Venus";
-		venus.diameter = 12104L;
-		venus.material = "Telluric";
+		Planete venus = new Planete();
+		venus.nom = "Venus";
+		venus.diametre = 12104L;
+		venus.matiere = "Tellurique";
 
-		Planet earth = new Planet();
-		earth.name = "Earth";
-		earth.diameter = 12742L;
-		earth.material = "Telluric";
+		Planete terre = new Planete();
+		terre.nom = "Terre";
+		terre.diametre = 12742L;
+		terre.matiere = "Tellurique";
 
-		Planet mars = new Planet();
-		mars.name = "Mars";
-		mars.diameter = 6779L;
-		mars.material = "Telluric";
+		Planete mars = new Planete();
+		mars.nom = "Mars";
+		mars.diametre = 6779L;
+		mars.matiere = "Tellurique";
 
-		Planet jupiter = new Planet();
-		jupiter.name = "Jupiter";
-		jupiter.diameter = 139822L;
-		jupiter.material = "Gaseous";
+		Planete jupiter = new Planete();
+		jupiter.nom = "Jupiter";
+		jupiter.diametre = 139822L;
+		jupiter.matiere = "Gazeuse";
 
-		Planet saturn = new Planet();
-		saturn.name = "Saturn";
-		saturn.diameter = 116460L;
-		saturn.material = "Gaseous";
+		Planete saturne = new Planete();
+		saturne.nom = "Saturne";
+		saturne.diametre = 116460L;
+		saturne.matiere = "Gazeuse";
 
-		Planet uranus = new Planet();
-		uranus.name = "Uranus";
-		uranus.diameter = 50724L;
-		uranus.material = "Gaseous";
+		Planete uranus = new Planete();
+		uranus.nom = "Uranus";
+		uranus.diametre = 50724L;
+		uranus.matiere = "Gazeuse";
 
-		Planet neptune = new Planet();
-		neptune.name = "Neptune";
-		neptune.diameter = 49244L;
-		neptune.material = "Gaseous";
+		Planete neptune = new Planete();
+		neptune.nom = "Neptune";
+		neptune.diametre = 49244L;
+		neptune.matiere = "Gazeuse";
 
-		Planet planet = new Planet();
+		Planete planet = new Planete();
 
 		System.out.println(
-				"Planet: " + jupiter.name + "\ndiameter: " + jupiter.diameter + " km \nmaterial: " + jupiter.material);
+				"Planète: " + jupiter.nom + "\ndiameter: " + jupiter.diametre + " km \nmaterial: " + jupiter.matiere);
 		System.out.println(
-				"Planet: " + planet.name + "\ndiameter: " + planet.diameter + " km \nmaterial: " + planet.material);
+				"Planète: " + planet.nom + "\ndiameter: " + planet.diametre + " km \nmaterial: " + planet.matiere);
 
-		neptune.revolution();
+		neptune.revolution(-3542);
 		System.out.println();
-		mars.rotation();
+		mars.rotation(-768);
+		System.out.println();
+		venus.rotation(1280);
+		System.out.println();
 
+		mars.accueillirVaisseau(8);
+		mars.accueillirVaisseau("FREGATE");
+		System.out.printf("Le nombre d'humains ayant déjà séjourné sur %s est actuellement de %d.", mars.nom,
+				mars.totalVisiteur);
 	}
 
 }
